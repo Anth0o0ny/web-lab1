@@ -1,0 +1,92 @@
+/*Таблица*/
+
+/*Цвет рамки, высота и ширина*/
+#verstka {
+    width: 100%;
+    height: 830px;
+    border: solid 30px blue;
+}
+
+/*Границы между ячеек*/
+#verstka tr, td{
+    border: solid 5px blue;
+}
+
+/*Фон*/
+#bcground{
+    background: hotpink;
+}
+
+/*Заголовок*/
+#cap {
+    text-align: center;
+    height: 170px;
+    font-family: sans-serif;
+    color: darkorchid;
+    vertical-align: middle;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px blue;
+}
+
+/*Размеры и отступ столбца с вводимыми данными*/
+#dataColumn{
+    text-indent: 20%;
+    width: 650px;
+    height: 200px;
+}
+
+
+
+/*Характеристики ячейки с изображением*/
+.parent {
+    font-size: 1.5em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+#pict2{
+    border: 10px solid skyblue;
+    top: 0;
+    left: 0;
+    position: relative;
+    border-image: linear-gradient(to right top, blue, skyblue, blue);
+    border-image-slice: 1;
+    float: left;
+}
+
+#pictDanthes{
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+/*Оформление кнопок при выборе координаты X*/
+.boxed label{
+    display: inline-block;
+    width: 20px;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+}
+
+/*Отключить чекбоксы*/
+.boxed input[type="radio"] {
+    display: none;
+}
+
+/*Выделение кнопки при нажатии*/
+.boxed input[type="radio"]:checked + label{
+    border: solid 6px blue;
+}
+
+/*Кнопка отправки результатов*/
+.submitButton{
+    width: 200px;
+    height: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
