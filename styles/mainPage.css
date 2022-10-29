@@ -36,8 +36,6 @@
     height: 200px;
 }
 
-
-
 /*Характеристики ячейки с изображением*/
 .parent {
     font-size: 1.5em;
@@ -64,23 +62,30 @@
     left: 0;
 }
 
-/*Оформление кнопок при выборе координаты X*/
-.boxed label{
+.xButton{
     display: inline-block;
+}
+
+fieldset{
+    border: 0 none;
+}
+
+
+/*Оформление кнопок при выборе координаты X*/
+.xButton label{
+    display: block;
     width: 20px;
     padding: 10px;
     border: solid 2px #ccc;
     transition: all 0.3s;
 }
-
 /*Отключить чекбоксы*/
-.boxed input[type="radio"] {
+.xButton input[type="radio"] {
     display: none;
 }
-
 /*Выделение кнопки при нажатии*/
-.boxed input[type="radio"]:checked + label{
-    border: solid 6px blue;
+.xButton input[type="radio"]:checked + label{
+    border: solid 10px red;
 }
 
 /*Кнопка отправки результатов*/
@@ -89,4 +94,19 @@
     height: 50px;
     font-size: 2.5em;
     font-weight: bold;
+}
+
+#wrongValueY, #wrongValueR{
+    margin-left: 20%;
+}
+
+#wrongValueY, #wrongValueR, #buttonError{
+    font-size: 1.5em;
+    color: lime;
+    font-weight: bold;
+    text-shadow: 1px 0 3px #000,
+    0 1px 3px #000,
+    -1px 0 3px #000,
+    0 -1px 3px #000;
+
 }
